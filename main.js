@@ -29,7 +29,7 @@ bot.on("messageCreate", (msg) => {
         
         Qualquer problema, mande mensagem inbox ao eggzera ou auxilie: Pulls requests são bem vindos.
         **--------------------------------------------------------**\n
-        Github: https://github.com/mablds/discord-bot
+        Github: https://github.com/mablds/midas-discord-bot
         LinkedIn: https://www.linkedin.com/in/marcelo-arthur-701929175/
         Email: marcelobragalemos@gmail.com`);
     }
