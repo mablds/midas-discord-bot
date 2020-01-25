@@ -18,9 +18,9 @@ The commands was being structured using the "!" on the beggining. There only a f
 * !gif <parameter to search> - Command that send to user the first gif about the subject used as parameter using the         Giphy API.
   
 ## Resources
-* [Express] (https://expressjs.com/pt-br/api.html)
-* [Youtube API] (https://developers.google.com/youtube/v3/quickstart/nodejs)  
-* [Eris bot] (https://abal.moe/Eris/docs)
-* [Giphy API] (https://developers.giphy.com/docs/sdk)
+* [Express](https://expressjs.com/pt-br/api.html)
+* [Youtube API](https://developers.google.com/youtube/v3/quickstart/nodejs)  
+* [Eris bot](https://abal.moe/Eris/docs)
+* [Giphy API](https://developers.giphy.com/docs/sdk)
 * [kivson's API](https://github.com/kivson/charadas)
-* [Heroku] (https://devcenter.heroku.com/categories/reference)
+* [Heroku](https://devcenter.heroku.com/categories/reference)
