@@ -2,10 +2,11 @@
 Chat-bot created to give some functionalities to my server's users. Code available to give a base about how to structure and how to use some APIs like Giphy API and Youtube API.
 
 ## Usage
-You can use Midas as it is by adding it to your own Discord's server. You can do this by using [this URL](https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot) or pasting this on your browser: ```https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot```
-After this, you only need to follow the steps. (You need to be logged on your account at the discordapp website.)
+You can use Midas as it is by adding it to your own Discord's server. You can do this by using [this URL](https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot) or pasting this on your browser:
 
-Or, you can use my code to create your new Bot with new functionalities or delete some of them. Feel free!
+```https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot```
+
+After this, you only need to follow the steps. (You will need to be logged on your account at the discordapp website.) Or, you can use my code to create your new Bot with new functionalities or delete some of them. Feel free!
 
 **Pull requestes are welcome.**
 
