@@ -8,7 +8,7 @@ Or, you can use my code to create new functionalities or delete some of them. Be
 
 Pull requestes are welcome.
 
-### Functionalities
+## Functionalities
 The commands was being structured using the "!" on the beggining. There only a few ones:
 * !ping - I usually do this to test the connection of my bot.
 * !help - Gives some hints and instructions about how to use.
