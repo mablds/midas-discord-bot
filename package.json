@@ -1,0 +1,37 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Erisbot lib used to create an aux bot to my servers on discord",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "curl": "^0.1.4",
+    "dotenv": "^8.1.0",
+    "eris": "^0.10.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2",
+    "request": "^2.88.0",
+    "simple-youtube-api": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mablds/discord-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "node",
+    "discord"
+  ],
+  "author": "mablds",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mablds/discord-bot/issues"
+  },
+  "homepage": "https://github.com/mablds/discord-bot#readme"
+}
