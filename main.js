@@ -10,7 +10,6 @@ const helpFunction = require('./src/helpFunction');
 const jokesFunction = require('./src/jokesFunctionAPI');
 const youtubeAPI = require('./src/youtubeAPI');
 const giphyAPI = require('./src/giphyAPI');
-const playJoKenPo = require('./src/jokenpo')
 
 //Bot listening to the new messages
 bot.on("messageCreate", (msg) => {
