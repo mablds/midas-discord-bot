@@ -1,5 +1,6 @@
 const randomNumber = require('../randomNumber');
 const giphyApiKey = process.env.GIPHY_API_KEY;
+const axios = require('axios')
 
 module.exports = function(msg, msgSent, bot){
     let toSearch = ""
