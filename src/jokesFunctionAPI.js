@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-module.exports = function jokesFunction(msg, bot){
+module.exports = (msg, bot) => {
     axios.get(`https://us-central1-kivson.cloudfunctions.net/charada-aleatoria`)
         .then((response) => {
             const pergunta = response.data.pergunta

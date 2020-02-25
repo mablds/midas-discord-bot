@@ -1,4 +1,4 @@
-module.exports = function youtubeAPI(msg, msgSent, bot, youtube){
+module.exports = (msg, msgSent, bot, youtube) => {
     let toSearch = ""
             if(msgSent.length > 1){
                 msgSent.shift()

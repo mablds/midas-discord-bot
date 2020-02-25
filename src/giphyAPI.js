@@ -2,7 +2,7 @@ const randomNumber = require('../randomNumber');
 const giphyApiKey = process.env.GIPHY_API_KEY;
 const axios = require('axios')
 
-module.exports = function(msg, msgSent, bot){
+module.exports = (msg, msgSent, bot) => {
     let toSearch = ""
     if(msgSent.length > 1){
         msgSent.shift()
