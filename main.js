@@ -22,9 +22,9 @@ bot.on("messageCreate", (msg) => {
         if(msgSent[0] === "!video") youtubeAPI(msg, msgSent, bot, youtube);
         if(msgSent[0] === "!gif") giphyAPI(msg, msgSent, bot)
     }
-    if(msg.content === "!ping") bot.createMessage(msg.channel.id, "Pong!");
     if(msg.content === "!help") helpFunction(msg, bot, sentUser);
     if(msg.content === "!piada") jokesFunction(msg, bot);
+    if(msg.content === "!ping") bot.createMessage(msg.channel.id, "Pong!");
 })
 
 bot.connect()
