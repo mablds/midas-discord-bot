@@ -17,7 +17,7 @@ module.exports = (msg, msgSent, bot) => {
         function getGif (toSearch) {
             axios.get(`http://api.giphy.com/v1/gifs/search?q=${toSearch}&api_key=${giphyApiKey}&limit=100`)
                 .then((response) => {
-                    const numberGenerated = randomNumber.randomNumber();
+                    const numberGenerated = randomNumber(response.data.data.length);
                     bot.createMessage(msg.channel.id, response.data.data[numberGenerated].url)
                 })
                 .catch((error) => {
