@@ -1,7 +1,7 @@
 module.exports = (msg, bot, sentUser) => {
     bot.createMessage(
         msg.channel.id, `**.\n       Olá humanos, olá ${sentUser}.** \n
-        Estou sendo desenvolvido ainda, mas já tenho meu valor. Tente dar comandos utilizando "!" no começo assim como fizeram para dar o comando help.\n
+        Tente dar comandos utilizando "!" no começo assim como fizeram para dar o comando help.\n
         **------------------------Tente:------------------------\n**
         __!ping__
         __!piada__
