@@ -1,4 +1,4 @@
-module.exports = (msg, msgSent, bot, youtube) => {
+module.exports = (msg, msgSent, youtube) => {
     let toSearch = ""
             if(msgSent.length > 1){
                 msgSent.shift()
@@ -14,10 +14,10 @@ module.exports = (msg, msgSent, bot, youtube) => {
                         toAnswer += "**"+ind +". "+ el.title + "\n**" + "Descrição: " + el.description + "\n" + `https://www.youtube.com/watch?v=${el.id}` + "\n\n"
                         ind++
                     })
-                    bot.createMessage(msg.channel.id, toAnswer)
+                    msg.reply(toAnswer)
                 })
                 .catch(err => {
                     console.log(err)
-                    bot.createMessage(msg.channel.id,'Ih véi, deu ruim. Tenta de novo aí mas se permanecer me manda uma mensagem no privado.')
+                    msg.reply('Ih véi, deu ruim. Tenta de novo aí mas se permanecer me manda uma mensagem no privado.')
                 })
 }

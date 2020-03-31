@@ -18,14 +18,14 @@ module.exports = (msg, msgSent, bot) => {
             axios.get(`http://api.giphy.com/v1/gifs/search?q=${toSearch}&api_key=${giphyApiKey}&limit=100`)
                 .then((response) => {
                     const numberGenerated = randomNumber(response.data.data.length);
-                    bot.createMessage(msg.channel.id, response.data.data[numberGenerated].url)
+                    msg.reply(response.data.data[numberGenerated].url)
                 })
                 .catch((error) => {
                     console.log(error);
-                    bot.createMessage(msg.channel.id,'Ih véi, deu ruim. Tenta de novo aí mas se permanecer me manda uma mensagem no privado.')
+                    msg.reply('Ih véi, deu ruim. Tenta de novo aí mas se permanecer me manda uma mensagem no privado.')
                 })
         }
     } else {
-        bot.createMessage(msg.channel.id, "Insira um assunto para buscar Gifs específicos!")
+        msg.reply("Insira um assunto para buscar Gifs específicos!")
     }
 }
