@@ -14,7 +14,7 @@ After this, you only need to follow the steps. (You will need to be logged on yo
 The commands was being structured using the "!" on the beggining. There only a few ones:
 * !ping - I usually do this to test the connection of my bot.
 * !help - Gives some hints and instructions about how to use.
-* !piada - Jokes command. Using the [kivson's API](https://github.com/kivson/charadas)
+* !charada - Jokes command. Using the [kivson's API](https://github.com/kivson/charadas)
 * !video <parameter to search> - Command that send to the user the first three Videos (Title, description and URL) about     the subject used as parameter using the Youtube API.
 * !gif <parameter to search> - Command that send to user the first gif about the subject used as parameter using the         Giphy API.
   
