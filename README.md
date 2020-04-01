@@ -21,7 +21,7 @@ The commands was being structured using the "!" on the beggining. There only a f
 ## Resources
 * [Express](https://expressjs.com/pt-br/api.html)
 * [Youtube API](https://developers.google.com/youtube/v3/quickstart/nodejs)  
-* [Eris bot](https://abal.moe/Eris/docs)
+* [Discord.js](https://discordjs.guide/)
 * [Giphy API](https://developers.giphy.com/docs/sdk)
 * [kivson's API](https://github.com/kivson/charadas)
 * [Heroku](https://devcenter.heroku.com/categories/reference)

@@ -7,9 +7,11 @@ const bot = new Discord.Client()
 
 //Comand functions import
 const helpFunction = require('./src/helpFunction');
-const jokesFunction = require('./src/jokesFunctionAPI');
+const musicFunction = require('./src/musicFunction');
+const guessFunction = require('./src/guessFunctionAPI');
 const youtubeAPI = require('./src/youtubeAPI');
 const giphyAPI = require('./src/giphyAPI');
+
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
@@ -24,11 +26,11 @@ bot.on("message", msg => {
     //bot command functions
     if(msgSent.length > 0){
         if(msgSent[0] === "!video") youtubeAPI(msg, msgSent, youtube);
-        if(msgSent[0] === "!gif") giphyAPI(msg, msgSent)
-        if(msgSent[0] === "!play") console.log(msgSent[1])
+        if(msgSent[0] === "!gif") giphyAPI(msg, msgSent);
+        if(msgSent[0] === "!play") musicFunction.execute(msg, msgSent, youtube);
     }
     if(msg.content === "!help") helpFunction(msg, sentUser);
-    if(msg.content === "!piada") jokesFunction(msg);
+    if(msg.content === "!charada") guessFunction(msg);
     if(msg.content === "!ping") msg.reply("Pong!");
 })
 
