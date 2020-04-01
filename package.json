@@ -4,15 +4,20 @@
   "description": "Erisbot lib used to create an aux bot to my servers on discord",
   "main": "main.js",
   "dependencies": {
+    "@discordjs/opus": "^0.1.0",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "curl": "^0.1.4",
     "discord.js": "^12.1.1",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.0.1",
+    "fluent-ffmpeg": "^2.1.2",
     "nodemon": "^2.0.2",
     "request": "^2.88.0",
-    "simple-youtube-api": "^5.2.1"
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^2.0.1"
   },
   "devDependencies": {},
   "scripts": {

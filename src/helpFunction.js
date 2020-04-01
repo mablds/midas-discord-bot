@@ -4,7 +4,7 @@ module.exports = (msg, sentUser) => {
         Tente dar comandos utilizando "!" no começo assim como fizeram para dar o comando help.\n
         **------------------------Tente:------------------------\n**
         __!ping__
-        __!piada__
+        __!charada__
         __!video__ <busca> (pode alterar o parametro após o comando)
         __!gif__ <busca> (pode alterar o parametro após o comando)
         
