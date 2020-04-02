@@ -36,7 +36,7 @@ module.exports.execute = async (msg, msgSent, youtube) => {
         try {
 			var connection = await channel.join();
 			queueContruct.connection = connection;
-			play(msg.guild, songInfo.video_url, queue);
+			play(msg, msg.guild, song, queue);
 		} catch (err) {
 			console.log(err);
 			queue.delete(msg.guild.id);
