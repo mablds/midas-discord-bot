@@ -1,4 +1,4 @@
-# discord-bot
+# midas-discord-bot
 Chat-bot created to give some functionalities to my server's users. Code available to give a base about how to structure and how to use some APIs like Giphy API and Youtube API.
 
 ## Usage
