@@ -27,7 +27,7 @@ bot.on("message", msg => {
     if(msgSent.length > 0){
         if(msgSent[0] === "!video") youtubeAPI(msg, msgSent, youtube);
         if(msgSent[0] === "!gif") giphyAPI(msg, msgSent);
-        if(msgSent[0] === "!play") musicFunction.execute(msg, msgSent, youtube);
+        //if(msgSent[0] === "!play") musicFunction.execute(msg, msgSent, youtube);
     }
     if(msg.content === "!help") helpFunction(msg, sentUser);
     if(msg.content === "!charada") guessFunction(msg);

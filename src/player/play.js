@@ -1,24 +1,38 @@
 const ytdl = require('ytdl-core');
+let playing = false;
 
-module.exports = (msg, guild, song, queue) => {
-  const serverQueue = queue.get(msg.guild.id);
+module.exports = (msg, guild, song, queue, serverQueue, connection) => {
+  let { channel } = msg.member.voice;
+
 	if (!song) {
-        serverQueue.channel.leave();
+    serverQueue.channel.leave();
 		queue.delete(guild.id);
 		return;
-    }
-    
-    msg.channel.send(`🎶 Reproduzindo - ${song.title}`);
+  }
 
-    console.log(serverQueue.songs)
+  if(!playing) {
+    msg.channel.send(`🎶 Reproduzindo - ${song.title}`);
+    playing = true;
     const dispatcher = serverQueue.connection.play(ytdl(song.url))
     .on('finish', () => {
-        console.log('Music ended!');
-        serverQueue.songs.shift();
-        play(msg, guild, serverQueue.songs[0], serverQueue);
-	})
-    .on('error', error => {
-		console.error(error);
-    });
-	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+      console.log('Music ended!');
+      serverQueue.songs.shift();
+      if(serverQueue.songs.length > 1) {
+          msg.channel.send(`🎶 Reproduzindo - ${serverQueue.songs[0].title}`);
+          serverQueue.connection.play(ytdl(serverQueue.songs[0].url))
+        } else {
+          playing = false;
+          channel.leave();
+        }
+      })
+      .on('error', error => {
+        playing = false;
+        channel.leave();
+        console.error(error);
+      });
+    dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+  } else {
+    serverQueue.songs.push(song);
+    return msg.channel.send(`🎶 ${song.title} foi adicionado a fila.`);
+  }
 }
