@@ -1,4 +1,4 @@
-const randomNumber = require('../randomNumber');
+const randomNumber = require('./randomNumber');
 const giphyApiKey = process.env.GIPHY_API_KEY;
 const axios = require('axios')
 

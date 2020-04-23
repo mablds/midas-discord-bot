@@ -6,13 +6,13 @@ const youtube = new YouTube(process.env.YOUTUBE_API_KEY)
 const bot = new Discord.Client()
 
 //Comand functions import
-const helpFunction = require('./src/helpFunction');
-const musicFunction = require('./src/musicFunction');
-const guessFunction = require('./src/guessFunctionAPI');
-const youtubeAPI = require('./src/youtubeAPI');
-const giphyAPI = require('./src/giphyAPI');
+const helpFunction = require('./src/botFunctions/helpFunction');
+const musicFunction = require('./src/botFunctions/musicFunction');
+const guessFunction = require('./src/botFunctions/guessFunctionAPI');
+const youtubeAPI = require('./src/botFunctions/youtubeAPI');
+const giphyAPI = require('./src/botFunctions/giphyAPI');
 
-
+//initializer bot
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
 });

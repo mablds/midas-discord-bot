@@ -1,7 +1,7 @@
 const ytdl = require('ytdl-core');
 const youtubeFunction = require('./youtubeAPI');
-const play = require('./player/play');
-const queue = require('./player/queue');
+const play = require('../player/play');
+const queue = require('../player/queue');
 
 module.exports.execute = async (msg, msgSent, youtube) => {
     const url = await youtubeFunction.searchURL(msg, msgSent, youtube)
