@@ -13,15 +13,12 @@ const youtubeAPI = require('./src/botFunctions/youtubeAPI');
 const giphyAPI = require('./src/botFunctions/giphyAPI');
 
 //initializer bot
-bot.on('ready', () => {
-    console.log(`Logged in as ${bot.user.tag}!`);
-});
+bot.on('ready', () => console.log(`Logged in as ${bot.user.tag}!`));
 
 //Bot listening to the new messages
 bot.on("message", msg => {
-    //set username and msgSent words array
     let sentUser = msg.author.username ? msg.author.username: msg.member.user.username;
-    let msgSent = msg.content.split(" ");
+    let msgSent = msg.content.split(" "); //set username and msgSent words array
     
     //bot command functions
     if(msgSent.length > 0){
