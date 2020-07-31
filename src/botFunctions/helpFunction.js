@@ -1,7 +1,7 @@
 module.exports = (msg, sentUser) => {
     msg.reply(
-        `**.\n       Olá humanos, olá ${sentUser}.** \n
-        Tente dar comandos utilizando "!" no começo assim como fizeram para dar o comando help.\n
+        `**.  Olá humanos, olá ${sentUser}.** \n
+        Tente dar comandos utilizando "!" no começo assim como fizeram para dar o comando help.
         **------------------------Tente:------------------------\n**
         __!ping__
         __!charada__
@@ -12,6 +12,7 @@ module.exports = (msg, sentUser) => {
         **--------------------------------------------------------**\n
         Github: https://github.com/mablds/midas-discord-bot
         LinkedIn: https://www.linkedin.com/in/marcelo-arthur-701929175/
-        Email: marcelobragalemos@gmail.com`
+        Email: marcelobragalemos@gmail.com
+        Telegram: @mablds`
     );
 }
