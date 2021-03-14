@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 const Discord = require('discord.js')
 const YouTube = require('simple-youtube-api')
 
