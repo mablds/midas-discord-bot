@@ -27,7 +27,7 @@ bot.on("message", msg => {
         //if(msgSent[0] === "!play") musicFunction.execute(msg, msgSent, youtube);
     }
     if(msg.content === "!help") helpFunction(msg, sentUser);
-    if(msg.content === "!charada") guessFunction(msg);
+    if(msg.content === "!charada") () => msg.reply("Temporariamente fora do ar!");
     if(msg.content === "!ping") msg.reply("Pong!");
 })
 
