@@ -1,4 +1,5 @@
 # midas-discord-bot
+**Discontinued**
 Chat-bot created to give some functionalities to my server's users. Code available to give a base about how to structure and how to use some APIs like Giphy API and Youtube API.
 
 ## Usage
@@ -20,8 +21,8 @@ The commands was being structured using the "!" on the beggining. There only a f
   
 ## Resources
 * [Express](https://expressjs.com/pt-br/api.html)
-* [Youtube API](https://developers.google.com/youtube/v3/quickstart/nodejs)  
+* [Youtube API](https://developers.google.com/youtube/v3/quickstart/nodejs) **issues here probably**
 * [Discord.js](https://discordjs.guide/)
-* [Giphy API](https://developers.giphy.com/docs/sdk)
-* [kivson's API](https://github.com/kivson/charadas)
+* [Giphy API](https://developers.giphy.com/docs/sdk) **issues here probably**
+* [kivson's API](https://github.com/kivson/charadas) **issues here probably**
 * [Heroku](https://devcenter.heroku.com/categories/reference)
