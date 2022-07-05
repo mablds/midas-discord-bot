@@ -4,7 +4,7 @@
   "description": "Erisbot lib used to create an aux bot to my servers on discord",
   "main": "main.js",
   "dependencies": {
-    "@discordjs/opus": "^0.1.0",
+    "@discordjs/opus": "^0.8.0",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "curl": "^0.1.4",
