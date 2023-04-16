@@ -1,0 +1,1 @@
+module.exports = msgInstance => msgInstance.reply("pong!");

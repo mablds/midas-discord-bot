@@ -1,28 +1,30 @@
 # midas-discord-bot
-**Discontinued**
-Chat-bot created to give some functionalities to my server's users. Code available to give a base about how to structure and how to use some APIs like Giphy API and Youtube API.
+Chat-bot integrated with OpenAI created to give some functionalities to my server's users. Code available to give a base about how to structure and how to use some APIs like discord.js, openai and mongoose.
 
 ## Usage
-You can use Midas as it is by adding it to your own Discord's server. You can do this by using [this URL](https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot) or pasting this on your browser:
+You can use Midas as it is by adding it to your own Discord's server. You can do this by using [this URL](https://discord.com/api/oauth2/authorize?client_id=622482772824424458&permissions=18975165643776&scope=bot) or pasting this on your browser:
 
-```https://discordapp.com/oauth2/authorize?client_id=622482772824424458&permissions=8&scope=bot```
+```https://discord.com/api/oauth2/authorize?client_id=622482772824424458&permissions=18975165643776&scope=bot```
 
-After this, you only need to follow the steps. (You will need to be logged on your account at the discordapp website.) Or, you can use my code to create your new Bot with new functionalities or delete some of them. Feel free!
+After this, you only need to follow the steps.
 
-**Pull requestes are welcome.**
+Or, you can use my code to create your new Bot with new functionalities or delete some of them. Feel free! If you want to do this, consider the `.env.example` file because it is extremely necessary to configure it before use.
+
+To setup your `.env` file, follow this instructions:
+- `cp .env.example .env`
+- Create your Discord App Bot token to fill the `DISCORD_TOKEN` env var;
+- Get your Discord Bot Application ID and fill the `BOT_ID` env var;
+- Create an account and create a Token on OpenAI platform to fill the `OPEN_AI_TOKEN` env var;
+- Create a MongoDB Database. I suggest to use AtlasDB. Theres a lot of tutorials teaching how to configure and setup your free DB instance. After configure it, you will be able to get a URI to fill your env var named `MONGO_URI`.
+
+**Pull requests are welcome.**
 
 ## Functionalities
 The commands was being structured using the "!" on the beggining. There only a few ones:
 * !ping - I usually do this to test the connection of my bot.
-* !help - Gives some hints and instructions about how to use.
-* !charada - Jokes command. Using the [kivson's API](https://github.com/kivson/charadas)
-* !video <parameter to search> - Command that send to the user the first three Videos (Title, description and URL) about     the subject used as parameter using the Youtube API.
-* !gif <parameter to search> - Command that send to user the first gif about the subject used as parameter using the         Giphy API.
+* !image { arguments } - Uses OpenAI to generate some image with the arguments informed. Ex: `!image green pikachu`. 
   
 ## Resources
-* [Express](https://expressjs.com/pt-br/api.html)
-* [Youtube API](https://developers.google.com/youtube/v3/quickstart/nodejs) **issues here probably**
 * [Discord.js](https://discordjs.guide/)
-* [Giphy API](https://developers.giphy.com/docs/sdk) **issues here probably**
-* [kivson's API](https://github.com/kivson/charadas) **issues here probably**
-* [Heroku](https://devcenter.heroku.com/categories/reference)
+* [mongoose](https://mongoosejs.com/)
+* [openai](https://github.com/openai/openai-node#readme)
